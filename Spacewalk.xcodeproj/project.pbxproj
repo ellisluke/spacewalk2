@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,15 @@
 		65F68B4226FFF4DA00D5C76B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65F68B4126FFF4DA00D5C76B /* Preview Assets.xcassets */; };
 		65F68B4D26FFF4DA00D5C76B /* Spacewalk2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F68B4C26FFF4DA00D5C76B /* Spacewalk2Tests.swift */; };
 		65F68B5826FFF4DB00D5C76B /* Spacewalk2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F68B5726FFF4DB00D5C76B /* Spacewalk2UITests.swift */; };
+		65F68B6626FFF51500D5C76B /* StepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F68B6526FFF51500D5C76B /* StepView.swift */; };
+		65F68B6926FFFE8100D5C76B /* HealthStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F68B6826FFFE8100D5C76B /* HealthStore.swift */; };
+		65F68B6D27000AE100D5C76B /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F68B6C27000AE100D5C76B /* HealthKit.framework */; };
+		65F68B6F27001CF000D5C76B /* SpacewalkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F68B6E27001CF000D5C76B /* SpacewalkView.swift */; };
+		65F68B7127002FA700D5C76B /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F68B7027002FA700D5C76B /* Request.swift */; };
+		65F68B742700327900D5C76B /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 65F68B732700327900D5C76B /* SwiftyJSON */; };
+		65F68B7827004A2000D5C76B /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F68B7727004A2000D5C76B /* Register.swift */; };
+		65F68B7B2700526400D5C76B /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 65F68B7A2700526400D5C76B /* Alamofire */; };
+		65F68B7D27005F6400D5C76B /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F68B7C27005F6400D5C76B /* Login.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +54,14 @@
 		65F68B5326FFF4DB00D5C76B /* Spacewalk2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Spacewalk2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		65F68B5726FFF4DB00D5C76B /* Spacewalk2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spacewalk2UITests.swift; sourceTree = "<group>"; };
 		65F68B5926FFF4DB00D5C76B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65F68B6526FFF51500D5C76B /* StepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepView.swift; sourceTree = "<group>"; };
+		65F68B6826FFFE8100D5C76B /* HealthStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthStore.swift; sourceTree = "<group>"; };
+		65F68B6A27000AE000D5C76B /* Spacewalk2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Spacewalk2.entitlements; sourceTree = "<group>"; };
+		65F68B6C27000AE100D5C76B /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		65F68B6E27001CF000D5C76B /* SpacewalkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpacewalkView.swift; sourceTree = "<group>"; };
+		65F68B7027002FA700D5C76B /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		65F68B7727004A2000D5C76B /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
+		65F68B7C27005F6400D5C76B /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +69,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65F68B7B2700526400D5C76B /* Alamofire in Frameworks */,
+				65F68B742700327900D5C76B /* SwiftyJSON in Frameworks */,
+				65F68B6D27000AE100D5C76B /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +99,7 @@
 				65F68B4B26FFF4DA00D5C76B /* Spacewalk2Tests */,
 				65F68B5626FFF4DB00D5C76B /* Spacewalk2UITests */,
 				65F68B3826FFF4D600D5C76B /* Products */,
+				65F68B6B27000AE100D5C76B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,11 +116,16 @@
 		65F68B3926FFF4D600D5C76B /* Spacewalk2 */ = {
 			isa = PBXGroup;
 			children = (
+				65F68B6A27000AE000D5C76B /* Spacewalk2.entitlements */,
+				65F68B6726FFF51F00D5C76B /* Views */,
 				65F68B3A26FFF4D600D5C76B /* Spacewalk2App.swift */,
 				65F68B3C26FFF4D600D5C76B /* ContentView.swift */,
 				65F68B3E26FFF4DA00D5C76B /* Assets.xcassets */,
 				65F68B4326FFF4DA00D5C76B /* Info.plist */,
 				65F68B4026FFF4DA00D5C76B /* Preview Content */,
+				65F68B6826FFFE8100D5C76B /* HealthStore.swift */,
+				65F68B6E27001CF000D5C76B /* SpacewalkView.swift */,
+				65F68B7027002FA700D5C76B /* Request.swift */,
 			);
 			path = Spacewalk2;
 			sourceTree = "<group>";
@@ -130,6 +156,24 @@
 			path = Spacewalk2UITests;
 			sourceTree = "<group>";
 		};
+		65F68B6726FFF51F00D5C76B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				65F68B6526FFF51500D5C76B /* StepView.swift */,
+				65F68B7727004A2000D5C76B /* Register.swift */,
+				65F68B7C27005F6400D5C76B /* Login.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		65F68B6B27000AE100D5C76B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				65F68B6C27000AE100D5C76B /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -146,6 +190,10 @@
 			dependencies = (
 			);
 			name = Spacewalk2;
+			packageProductDependencies = (
+				65F68B732700327900D5C76B /* SwiftyJSON */,
+				65F68B7A2700526400D5C76B /* Alamofire */,
+			);
 			productName = Spacewalk2;
 			productReference = 65F68B3726FFF4D600D5C76B /* Spacewalk2.app */;
 			productType = "com.apple.product-type.application";
@@ -208,7 +256,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 65F68B3226FFF4D600D5C76B /* Build configuration list for PBXProject "Spacewalk2" */;
+			buildConfigurationList = 65F68B3226FFF4D600D5C76B /* Build configuration list for PBXProject "Spacewalk" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -217,6 +265,10 @@
 				Base,
 			);
 			mainGroup = 65F68B2E26FFF4D600D5C76B;
+			packageReferences = (
+				65F68B722700327900D5C76B /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				65F68B792700526400D5C76B /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 65F68B3826FFF4D600D5C76B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -260,7 +312,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				65F68B3D26FFF4D600D5C76B /* ContentView.swift in Sources */,
+				65F68B7127002FA700D5C76B /* Request.swift in Sources */,
 				65F68B3B26FFF4D600D5C76B /* Spacewalk2App.swift in Sources */,
+				65F68B6626FFF51500D5C76B /* StepView.swift in Sources */,
+				65F68B6926FFFE8100D5C76B /* HealthStore.swift in Sources */,
+				65F68B7827004A2000D5C76B /* Register.swift in Sources */,
+				65F68B6F27001CF000D5C76B /* SpacewalkView.swift in Sources */,
+				65F68B7D27005F6400D5C76B /* Login.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,6 +475,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Spacewalk2/Spacewalk2.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Spacewalk2/Preview Content\"";
 				DEVELOPMENT_TEAM = 9HC3M8AXG8;
@@ -439,6 +498,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Spacewalk2/Spacewalk2.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Spacewalk2/Preview Content\"";
 				DEVELOPMENT_TEAM = 9HC3M8AXG8;
@@ -543,7 +603,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		65F68B3226FFF4D600D5C76B /* Build configuration list for PBXProject "Spacewalk2" */ = {
+		65F68B3226FFF4D600D5C76B /* Build configuration list for PBXProject "Spacewalk" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				65F68B5A26FFF4DB00D5C76B /* Debug */,
@@ -580,6 +640,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		65F68B722700327900D5C76B /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+		65F68B792700526400D5C76B /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		65F68B732700327900D5C76B /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 65F68B722700327900D5C76B /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+		65F68B7A2700526400D5C76B /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 65F68B792700526400D5C76B /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 65F68B2F26FFF4D600D5C76B /* Project object */;
 }
